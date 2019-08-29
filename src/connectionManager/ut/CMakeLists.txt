@@ -6,11 +6,9 @@ add_executable(ut_connectionMgr
 
 target_link_libraries(ut_connectionMgr
         PRIVATE connectionManager
-        PRIVATE GTest::GTest
-        PRIVATE GTest::Main
-        PRIVATE gmock
+        PRIVATE CONAN_PKG::gtest
         PRIVATE Threads::Threads
-        )
+)
 
 include(GoogleTest)
 gtest_discover_tests(ut_connectionMgr)

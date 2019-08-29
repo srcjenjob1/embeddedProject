@@ -5,6 +5,9 @@ target_include_directories(common INTERFACE
         $<INSTALL_INTERFACE:include>
         )
 
+set_target_properties(connectionManager PROPERTIES
+        PUBLIC_HEADER "CommonTypes.h;ReceivingInterface.h;SendingInterface.h")
+
 install(TARGETS common EXPORT commonConfig
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib
