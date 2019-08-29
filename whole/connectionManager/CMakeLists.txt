@@ -19,9 +19,6 @@ target_include_directories(connectionManager INTERFACE
 target_compile_features(connectionManager
         PUBLIC cxx_std_14)
 
-set_target_properties(connectionManager PROPERTIES
-        PUBLIC_HEADER "ConnectionManager.h;MsgMerger.h;MsgHelper.h")
-
 
 install(TARGETS connectionManager EXPORT connectionManagerConfig
         RUNTIME DESTINATION bin

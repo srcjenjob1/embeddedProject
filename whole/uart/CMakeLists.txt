@@ -14,10 +14,6 @@ target_include_directories(uart
 target_compile_features(uart
         PUBLIC cxx_std_14)
 
-set_target_properties(uart PROPERTIES
-        PUBLIC_HEADER "UARTInterface.h")
-
-
 install(TARGETS uart EXPORT uartConfig
         RUNTIME DESTINATION bin
         LIBRARY DESTINATION lib

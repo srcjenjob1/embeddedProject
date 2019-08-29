@@ -9,9 +9,6 @@ target_include_directories(i2c
         PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
         PUBLIC $<INSTALL_INTERFACE:include>)
 
-set_target_properties(i2c PROPERTIES
-        PUBLIC_HEADER "I2cInterface.h")
-
 target_compile_features(i2c
         PUBLIC cxx_std_14)
 
